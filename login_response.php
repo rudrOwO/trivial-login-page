@@ -9,15 +9,11 @@
 
 <body>
     <?php
-    $var = 5;
+    $username = $_POST["uname"];
+    $password =  $_POST["passwd"];
 
-    if ($var == 5) {
-        echo "Hello  <br/>";
-    }
-
-    foreach ($_GET as $key => $val) {
-        echo "$key is $val <br/>";
-    }
+    echo $username;
+    echo $password;
     ?>
 </body>
 

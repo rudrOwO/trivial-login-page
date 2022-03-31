@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="top-container">
-      <form id="form-container">
+      <form id="form-container" action="./login_response.php" method="post">
         <div class="form-group">
           <label for="uname">Username</label>
           <input
@@ -41,9 +41,11 @@
           <button type="submit" class="btn btn-primary" id="login">
             Login
           </button>
-          <button type="submit" class="btn btn-primary" id="register">
-            Register
-          </button>
+          <a href="https://www.example.com">
+            <button type="button" class="btn btn-primary" id="register">
+              Register
+            </button>
+          </a>
         </div>
       </form>
     </div>

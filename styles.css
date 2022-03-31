@@ -35,22 +35,19 @@ body {
     margin: auto;
 }
 
+.form-group {
+    width: min(80vw, 500px);
+}
+
 #uname, #passwd {
     margin-bottom: 5%;
 }
 
 #button-container {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-between;
-    /* place-items: stretch; */
     flex-direction: row;
     color: var(--foreground);
     font-size: 1rem;
 }
-
-/* #login {
-    flex: 1;
-    margin-right: ;
-    
-} */
