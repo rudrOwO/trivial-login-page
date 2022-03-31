@@ -1,0 +1,56 @@
+:root {
+    --dimension: 100vmin;
+    --background: #c4b5fd;
+    --foreground: #8b5cf6;
+}
+
+/* @media screen and (orientation: portrait) and (min-width: 575px) {
+    :root {
+        --dimension: 575px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-height: 575px) {
+    :root {
+        --dimension: 575px;
+    }
+} */
+
+body {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+#top-container {
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: auto;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+#uname, #passwd {
+    margin-bottom: 5%;
+}
+
+#button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* place-items: stretch; */
+    flex-direction: row;
+    color: var(--foreground);
+    font-size: 1rem;
+}
+
+/* #login {
+    flex: 1;
+    margin-right: ;
+    
+} */
