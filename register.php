@@ -25,7 +25,7 @@
     $clientMessage = "";
     $alert = "danger";
 
-    if ($username === "" || $password === "") { // Input sanitization
+    if ($username === "" || $email === "" || $password === "") { // Input sanitization
         $display = "block";
         $clientMessage = "Invalid input format detected";
     } else { // Process query
