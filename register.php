@@ -53,10 +53,6 @@
             }
         }
     }
-
-    // if (!$result) {
-    //   echo "<script>console.log('query unsuccessful')</script>";
-    // }
     ?>
 
     <!-- Render page to Client -->

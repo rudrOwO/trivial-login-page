@@ -42,10 +42,6 @@
       $clientMessage = "Invalid Credentials! Please try again";
     }
   }
-
-  // if (!$result) {
-  //   echo "<script>console.log('query unsuccessful')</script>";
-  // }
   ?>
 
   <!-- Render page to Client -->
@@ -67,7 +63,7 @@
       </div>
       <div id="button-container">
         <button type="submit" class="btn btn-success" id="login">Login</button>
-        <a href="./register.php">
+        <a href="./register.html">
           <button type="button" class="btn btn-primary" id="register">
             Register
           </button>
