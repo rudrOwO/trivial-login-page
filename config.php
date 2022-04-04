@@ -6,8 +6,6 @@ $database = "user_record";
 
 $conn = mysqli_connect($server, $username, $pass, $database);
 
-if ($conn) {
-} else {
-
+if (!$conn) {
     die("<script>alert('connection failed')</script>");
 }

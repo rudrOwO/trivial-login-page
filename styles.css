@@ -4,18 +4,6 @@
     --foreground: #8b5cf6;
 }
 
-/* @media screen and (orientation: portrait) and (min-width: 575px) {
-    :root {
-        --dimension: 575px;
-    }
-}
-
-@media screen and (orientation: landscape) and (min-height: 575px) {
-    :root {
-        --dimension: 575px;
-    }
-} */
-
 body {
     position: fixed;
     margin: 0px;
