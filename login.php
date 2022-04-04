@@ -7,24 +7,20 @@
   <link rel="shortcut icon" href="about:blank" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./styles.css" />
-  <title>Sample Login</title>
+  <title>Login</title>
 </head>
 
 <body>
-
   <?php
   // server initialization
-  include 'config.php';
+  include 'mysql_config.php';
 
   // retreive form data
   $username = $_POST["uname"];
   $password =  $_POST["passwd"];
 
 
-  // $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
-  // $result = mysqli_query($conn, $query);
-
-
+  // varibles used for rendering
   $display = "none";
   $clientMessage = "";
 
@@ -39,7 +35,8 @@
 
     if (mysqli_num_rows($userCount) > 0) {
       // Redirect to Home Page
-      echo "Success";
+      header("Location: https://cataas.com/cat/gif");
+      die();
     } else {
       $display = "block";
       $clientMessage = "Invalid Credentials! Please try again";
@@ -69,10 +66,8 @@
         <input id="passwd" class="form-control" type="password" placeholder="Enter Password" name="passwd" required />
       </div>
       <div id="button-container">
-        <button type="submit" class="btn btn-primary" id="login">
-          Login
-        </button>
-        <a href="https://www.example.com">
+        <button type="submit" class="btn btn-success" id="login">Login</button>
+        <a href="./register.php">
           <button type="button" class="btn btn-primary" id="register">
             Register
           </button>

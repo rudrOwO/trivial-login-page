@@ -16,19 +16,17 @@ body {
 #top-container {
     display: grid;
     place-items: center;
-    width: auto;
-    height: auto;
     position: absolute;
     inset: 0;
     margin: auto;
 }
 
-.form-group {
-    width: min(80vw, 500px);
+#form-container {
+    width: min(80vw, 475px);
 }
 
-#uname, #passwd {
-    margin-bottom: 5%;
+#uname, #passwd, #email {
+    margin-bottom: 3%;
 }
 
 #button-container {
@@ -38,4 +36,5 @@ body {
     flex-direction: row;
     color: var(--foreground);
     font-size: 1rem;
+    margin-top: 5%;
 }
